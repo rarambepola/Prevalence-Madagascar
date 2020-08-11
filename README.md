@@ -13,7 +13,11 @@ Please note that the catchment model requires a large amount of information to b
 The causal inference scripts require the R packages [RCITcpp](https://github.com/rarambepola/RCITcpp) for efficient independence testing.
 
 <h2>Workflow<h2>
+  
+  
   When recreating the full analysis, the suggested order is to run the catchment model first, then casual inference, then make the incidence surfaces and finally run the prevalence model. On smaller machines we suggest the catchment model outputs already supplied be used.
   
 <h2>Results<h2>
+  
+  
   The case number and health facility locations provided here are sample data and therefore the outputs of this analysis will differ slightly from the actual results. However, this data has been generated to broadly resemble the original data and therefore results should be similar.
