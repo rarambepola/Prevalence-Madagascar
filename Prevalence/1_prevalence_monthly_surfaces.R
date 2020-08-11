@@ -208,16 +208,20 @@ library(raster)
 #load static covariates and normalise
 load("normalised_hf_covariates.RData")
 print(names(static_norm_covs))
-static_stack <- raster::stack("../../Map_madagascar/Model_2020/JustPrevalence/static_stack.tif")
+
+static_stack <- raster::stack("static_stack.tif")
+
 static_covs <- values(static_stack)[which_not_na, ]
 for(i in 1:dim(static_covs)[2]){
   static_covs[, i] <- (static_covs[, i] - static_cov_means[i]) / static_cov_sds[i]
 }
 
 
-rain_stack <- raster::stack("../../Map_madagascar/Model_2020/rain_stack.tif")
-lst_stack <- raster::stack("../../Map_madagascar/Model_2020/lst_stack.tif")
-evi_stack <- raster::stack("../../Map_madagascar/Model_2020/evi_stack.tif")
+
+rain_stack <- raster::stack("rain_stack.tif")
+lst_stack <- raster::stack("lst_stack.tif")
+evi_stack <- raster::stack("evi_stack.tif")
+
 
 
 incs <- c()
@@ -310,7 +314,9 @@ for(year_i in 1:4){
     plot(prev_surface, zlim=c(0, 0.6), main=month_i)
     dev.off()
     
-    # writeRaster(prev_surface, paste0("../Prevalence_surfaces/prevalence_month", month_i, ".tif"), overwrite=TRUE)
+
+    writeRaster(prev_surface, paste0("../Prevalence_surfaces/prevalence_month", month_i, ".tif"), overwrite=TRUE)
+
     year_prev <- year_prev + prev_no_cov
   }
   
