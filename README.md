@@ -3,7 +3,7 @@ This repository contains code used for making monthly maps of prevalence of Plas
 
 The routine case data (inlcuding health facility locatiosn) in this repository are **sample data**. Real data may be obtained by contacting the National Malaria Control Programme of Madagascar. Prevalence data is accurate and full Malaria Indicator Survey datasets are freely available from the DHS online data repository: https://dhsprogram.com/.
 
-The outputs of each step are included so that any step can be run independently. Covariate rasters are not stored in this repository due to their size. A link to these files should have been provided elsewhere or can be provided on request. Scripts that require these external data files are:
+The outputs of each step are included so that any step can be run independently. Covariate rasters are not stored in this repository due to their size but can be found [here](https://drive.google.com/drive/folders/15KbwxvDxWnPD6yQcBY2QLA5JWI9Sl0BF?usp=sharing). Scripts that require these external data files are:
 * `Incidence/1_incidence_surfaces.R` requires `raster_covs_static.tif`
 * `Prevalence/1_prevalence_monthly_surfaces.R` requires the folder `Incidence_surfaces` and files `static_stack.tif`, `rain_stack.tif`, `lst_stack.tif`, `evi_stack.tif`
 * `Prevalence/2_prevalence_monthly_surfaces_uncertainty.R` requires the folder `Incidence_surfaces` and files `static_stack.tif`, `rain_stack.tif`, `lst_stack.tif`, `evi_stack.tif`
