@@ -8,6 +8,6 @@ The outputs of each step are included so that any step can be run independently.
 * `Prevalence/1_prevalence_monthly_surfaces.R` requires the folder `Incidence_surfaces` and files `static_stack.tif`, `rain_stack.tif`, `lst_stack.tif`, `evi_stack.tif`
 * `Prevalence/2_prevalence_monthly_surfaces_uncertainty.R` requires the folder `Incidence_surfaces` and files `static_stack.tif`, `rain_stack.tif`, `lst_stack.tif`, `evi_stack.tif`
 
-Please note that the catchment model requires a large amount of information to be read into memory (around 30 GB) and therefore is unlikely to run on machines with less than 64GB of RAM. Intermediate raster steps are not included due to their size.
+Please note that the catchment model requires a large amount of information to be read into memory (around 30 GB) and therefore is unlikely to run on machines with less than 64GB of RAM. Intermediate raster outputs are not included due to their size.
 
 The causal inference scripts require the R packages [RCITcpp](https://github.com/rarambepola/RCITcpp) for efficient independence testing.
