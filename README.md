@@ -3,6 +3,10 @@ This repository contains code used for making monthly maps of prevalence of Plas
 
 The routine case data (inlcuding health facility locatiosn) in this repository are **sample data**. Real data may be obtained by contacting the National Malaria Control Programme of Madagascar. Prevalence data is accurate and full Malaria Indicator Survey datasets are freely available from the DHS online data repository: https://dhsprogram.com/.
 
-The outputs of each step are included so that any step can be run independently. Please note that the catchment model requires a large amount of information to be read into memory (around 30 GB) and therefore is unlikely to run on machines with less than 64GB of RAM. 
+The outputs of each step are included so that any step can be run independently. Covariate rasters are not stored in this repository due to their size. A link to these files should have been provided elsewhere or can be provided on request. Scripts that require these external data files (and where in the directory they are expcted) are:
+* `Incidence/1_incidence_surfaces.R` requires `raster_covs_static.tif`
+* `Prevalence/1_prevalence_monthly_surfaces.R` requires the folder `Incidence_surfaces` and files `static_stack.tif`, `rain_stack.tif`, `lst_stack.tif`, `evi_stack.tif`
+
+Please note that the catchment model requires a large amount of information to be read into memory (around 30 GB) and therefore is unlikely to run on machines with less than 64GB of RAM. 
 
 The causal inference scripts require the R packages [RCITcpp](https://github.com/rarambepola/RCITcpp) for efficient independence testing.
