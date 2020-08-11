@@ -5,4 +5,4 @@ The routine case data (inlcuding health facility locatiosn) in this repository a
 
 The outputs of each step are included so that any step can be run independently. Please note that the catchment model requires a large amount of information to be read into memory (around 30 GB) and therefore is unlikely to run on machines with less than 64GB of RAM. 
 
-The causal inference scripts require two small R packages: [RCITcpp](https://github.com/rarambepola/RCITcpp), for efficient independence testing, and [causalInference](https://github.com/rarambepola/causalInference), for a two step, order-independent implementation of the PC algorithm.
+The causal inference scripts require the R packages [RCITcpp](https://github.com/rarambepola/RCITcpp) for efficient independence testing.
