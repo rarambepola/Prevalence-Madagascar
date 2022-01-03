@@ -1,5 +1,5 @@
 # Prevalence-Madagascar
-This repository contains code used for making monthly maps of prevalence of Plasmodium falciparum infection in individuals between 6 and 59 months of age in Madagascar between 2013 and 2016. This analysis is described [here](https://www.nature.com/articles/s41598-020-75189-0) (Arambepola, R., Keddie, S.H., Collins, E.L. et al. Spatiotemporal mapping of malaria prevalence in Madagascar using routine surveillance and health survey data).
+This repository contains code used for making monthly maps of prevalence of Plasmodium falciparum infection in individuals between 6 and 59 months of age in Madagascar between 2013 and 2016. This analysis is described [here](https://www.nature.com/articles/s41598-020-75189-0) (Arambepola et al. Spatiotemporal mapping of malaria prevalence in Madagascar using routine surveillance and health survey data).
 
 The routine case data (inlcuding health facility locatiosn) in this repository are **sample data**. Real data may be obtained by contacting the National Malaria Control Programme of Madagascar. Prevalence data is accurate and full Malaria Indicator Survey datasets are freely available from the DHS online data repository: https://dhsprogram.com/.
 
